@@ -2,7 +2,7 @@
 ### Techdegree Project 9 - Capstone Portfolio
 
 **Skills Used:**
-#### Skills Used:
+### Skills Used:
 
 - HTML
 - CSS
