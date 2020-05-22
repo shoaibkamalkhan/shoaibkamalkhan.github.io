@@ -1,8 +1,7 @@
 # Front End Web Development Portfolio
-### Techdegree Project 9 - Capstone Portfolio
+# Techdegree Project 9 - Capstone Portfolio
 
 **Skills Used:**
-### Skills Used:
 
 - HTML
 - CSS
