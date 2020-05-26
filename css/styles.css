@@ -47,6 +47,10 @@ nav ul li {
     font-size: .75rem;
 }
 
+.contact-li {
+    margin-right: 0px;
+}
+
 .main-heading {
     margin-right: auto;
     text-align: center;
