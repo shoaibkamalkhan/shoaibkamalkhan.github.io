@@ -77,7 +77,11 @@ nav ul li {
 .banner h3,
 .banner p {
     color: #FFFFFF;
-    background-color: #000000; 
+    background-color: #000000;
+    display: table;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .banner h1 {
@@ -94,8 +98,8 @@ nav ul li {
 
 .profile-image {
     margin-top: 50px;
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 115px;
     border-radius: 50%;
     border: 3px solid white;
 }
