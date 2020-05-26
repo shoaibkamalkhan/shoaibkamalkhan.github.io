@@ -65,12 +65,25 @@ nav ul li {
     font-size: .50rem;
 }
 
+a {
+    text-decoration: none; 
+}
+
+a:link,
+a:visited,
+a:hover,
+a:hover {
+    color: #FFFFFF;
+}
+
+
 .banner {
     text-align: center;
     background: url('../img/color-dumbo.jpg') no-repeat center;
     background-size: cover;
     overflow: hidden;
     padding-top: 115px;
+    padding-bottom: 50px;
 }
 
 .banner h1,
