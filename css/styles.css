@@ -42,7 +42,7 @@ nav {
 
 nav ul li {
     float: left;
-    margin: 0 5px;
+    margin: 0 3px;
     list-style: none;
     font-size: .75rem;
 }
@@ -137,6 +137,10 @@ a:hover {
         
         .main-heading h3 {
             font-size: .75rem;
+        }
+
+        nav ul li {
+            margin: 0 5px;   
         }
 
         nav ul li {
