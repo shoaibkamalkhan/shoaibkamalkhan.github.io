@@ -10,38 +10,67 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    padding: 0 1rem;
-    /* background-color: #000000;
-    color: #FFFFFF; */
+    background-color: #f7f5f0;
 }
 
 /* Base Styles */
 
-nav {
+header {
+    background-color: #000000;
+    color: #FFFFFF;
+    position: fixed;
+    width: 100%;
+}
+
+.hd-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 60px;
-    background-color: #000000;
-    color: #FFFFFF;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul li {
+    float: left;
+    margin: 0 5px;
+    list-style: none;
+    font-size: .75rem;
 }
 
 .main-heading {
     margin-right: auto;
 }
 
-header {
-    text-align: center;
-    background: url('../img/new_background.jpg') no-repeat center;
-    background-size: cover;
-    overflow: hidden;
-    padding-top: 60px;
+.main-heading h1,
+.main-heading h3 {
+    margin: 0px
 }
 
-header h1,
-header h3,
-header p {
+.main-heading h1 {
+    font-size: .75rem;
+}
+
+.main-heading h3 {
+    font-size: .50rem;
+}
+
+.banner {
+    text-align: center;
+    background: url('../img/color-dumbo.jpg') no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 145px;
+}
+
+.banner h1,
+.banner h3,
+.banner p {
     color: #FFFFFF;
+    background-color: #000000;
+    
 }
 
 .profile-image {
@@ -50,5 +79,47 @@ header p {
     height: 150px;
     border-radius: 50%;
     border: 3px solid white;
-    transition: all .5s;
 }
+
+.hd-container,
+.container,
+.ft-container {
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+    @media only screen and (min-width: 768px) {
+       
+        /* Base Styles */
+
+        .hd-container,
+        .container,
+        .ft-container {
+            max-width: 800px;
+        }
+        
+        .main-heading h1 {
+            font-size: 1.25rem;
+        }
+        
+        .main-heading h3 {
+            font-size: .75rem;
+        }
+
+        nav ul li {
+            font-size: 1rem;
+        }
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        /* Base Styles */
+
+        .hd-container,
+        .container,
+        .ft-container {
+            max-width: 1200px;
+        }
+
+    }
