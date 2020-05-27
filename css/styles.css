@@ -20,13 +20,13 @@ body {
 .hd-container,
 .container,
 .ft-container {
-    padding: 0 1rem;
-    margin: 0 auto;
+    padding: 0px 1rem;
+    margin: 0px auto;
 }
 
 .container {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* Header Styles */
@@ -133,6 +133,11 @@ a:hover {
 
 /* Portfolio Styles */
 
+.pf-heading {
+    text-align: center;
+    margin: 0px;
+}
+
 .pf-cards {
     display: flex;
     flex-direction: column;
@@ -145,7 +150,9 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #808080;
 }
 
 .project-images,
@@ -153,18 +160,23 @@ a:hover {
     width: 100%;
 }
 
-.profile-image {
-    margin-right: 2rem;
+.project-images {
+    border: 1px solid #808080;
 }
 
 .project-info {
-    margin-left: 2rem;
+    margin-top: .75rem;
 }
 
 /* Contact Styles */
 
 .contact {
     text-align: center;
+    padding-top: 50px;
+}
+
+.contact h2 {
+    margin-top: 0px;
 }
 
 .contact a {
@@ -199,6 +211,11 @@ footer {
         .container,
         .ft-container {
             max-width: 800px;
+        }
+
+        .container {
+            padding-top: 75px;
+            padding-bottom: 75px;
         }
         
         /* Header Styles */
@@ -242,7 +259,32 @@ footer {
             height: 150px;
         }
 
+        /* Portfolio Styles */
+
+        .card {
+            flex-wrap: nowrap;
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+
+        .project-images,
+        .project-info {
+            max-width: 50%;
+        }
+
+        .project-images {
+            margin-right: 1rem;
+        }
         
+        .project-info {
+            margin-left: 1rem;
+        }
+
+        /* Contact Styles */
+
+        .contact {
+            padding-top: 75px;
+        }
 
     }
 
@@ -256,17 +298,6 @@ footer {
         .container,
         .ft-container {
             max-width: 1200px;
-        }
-
-        /* Portfolio Styles */
-
-        .card {
-            flex-wrap: nowrap;
-        }
-
-        .project-images,
-        .project-info {
-            max-width: 50%;
         }
 
     }
