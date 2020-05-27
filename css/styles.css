@@ -15,12 +15,21 @@ body {
 
 /* Base Styles */
 
+/* Container Styles */
+
 .hd-container,
 .container,
 .ft-container {
     padding: 0 1rem;
     margin: 0 auto;
 }
+
+.container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+/* Header Styles */
 
 header {
     background-color: #000000;
@@ -80,6 +89,7 @@ a:hover {
     color: #FFFFFF;
 }
 
+/* Banner Styles */
 
 .banner {
     text-align: center;
@@ -121,26 +131,26 @@ a:hover {
     border: 3px solid white;
 }
 
-.container {
-    padding-top: 75px;
-}
+/* Portfolio Styles */
 
 .pf-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .card {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 3rem;
-
 }
 
 .project-images,
 .project-info {
-    max-width: 50%;
+    width: 100%;
 }
 
 .profile-image {
@@ -151,14 +161,18 @@ a:hover {
     margin-left: 2rem;
 }
 
+/* Contact Styles */
+
 .contact {
     text-align: center;
 }
 
 .contact a {
     color: #000000;
-    text-decoration: initial;
+    text-decoration: underline;
 }
+
+/* Footer Styles */
 
 footer {
     background-color: #000000;
@@ -167,15 +181,19 @@ footer {
 }
 
 .ft-container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 60px;
 }
 
-
+/* Media Queries */
 
     @media only screen and (min-width: 768px) {
        
         /* Base Styles */
+
+        /* Container Styles */
 
         .hd-container,
         .container,
@@ -183,6 +201,8 @@ footer {
             max-width: 800px;
         }
         
+        /* Header Styles */
+
         .main-heading h1 {
             font-size: 1.25rem;
         }
@@ -198,6 +218,8 @@ footer {
         nav ul li {
             font-size: 1rem;
         }
+
+        /* Banner Styles */
 
         .banner {
             padding-top: 145px;
@@ -220,11 +242,24 @@ footer {
             height: 150px;
         }
 
+        /* Portfolio Styles */
+
+        .card {
+            flex-wrap: nowrap;
+        }
+
+        .project-images,
+        .project-info {
+            max-width: 50%;
+        }
+
     }
 
     @media only screen and (min-width: 1024px) {
 
         /* Base Styles */
+
+        /* Container Styles */
 
         .hd-container,
         .container,
