@@ -242,16 +242,7 @@ footer {
             height: 150px;
         }
 
-        /* Portfolio Styles */
-
-        .card {
-            flex-wrap: nowrap;
-        }
-
-        .project-images,
-        .project-info {
-            max-width: 50%;
-        }
+        
 
     }
 
@@ -265,6 +256,17 @@ footer {
         .container,
         .ft-container {
             max-width: 1200px;
+        }
+
+        /* Portfolio Styles */
+
+        .card {
+            flex-wrap: nowrap;
+        }
+
+        .project-images,
+        .project-info {
+            max-width: 50%;
         }
 
     }
