@@ -199,6 +199,10 @@ footer {
     height: 60px;
 }
 
+footer p {
+    font-size: .75rem;
+}
+
 /* Media Queries */
 
     @media only screen and (min-width: 768px) {
@@ -242,7 +246,7 @@ footer {
         }
         
         .banner h3 {
-            font-size: .95rem;
+            font-size: 1.085rem;
         }
         
         .banner p {
@@ -250,8 +254,8 @@ footer {
         }
 
         .profile-image {
-            width: 125px;
-            height: 125px;
+            width: 135px;
+            height: 135px;
         }
 
         /* Portfolio Styles */
@@ -261,7 +265,12 @@ footer {
         /* Contact Styles */
 
         
+        
+        /* Footer Styles */
 
+        footer p {
+            font-size: 1rem;
+        }
     }
 
     @media only screen and (min-width: 1024px) {
