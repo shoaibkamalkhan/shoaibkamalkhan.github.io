@@ -238,26 +238,26 @@ footer {
         }
 
         .banner h1 {
-            font-size: 2rem;
+            font-size: 1.75rem;
         }
         
         .banner h3 {
-            font-size: 1.17rem;
+            font-size: 1rem;
         }
         
         .banner p {
-            font-size: 1rem;
+            font-size: .85rem;
         }
 
         .profile-image {
-            width: 150px;
-            height: 150px;
+            width: 125px;
+            height: 125px;
         }
 
         /* Portfolio Styles */
 
 
-        
+
         /* Contact Styles */
 
         
@@ -274,11 +274,31 @@ footer {
         .container,
         .ft-container {
             max-width: 1200px;
+            padding: 0px 2rem;  
         }
 
         .container {
             padding-top: 75px;
             padding-bottom: 75px;
+        }
+
+        /* Banner Styles */
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+        }
+
+        .banner h1 {
+            font-size: 2rem;
+        }
+        
+        .banner h3 {
+            font-size: 1.17rem;
+        }
+        
+        .banner p {
+            font-size: 1rem;
         }
 
         /* Portfolio Styles */
