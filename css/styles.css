@@ -212,11 +212,6 @@ footer {
         .ft-container {
             max-width: 800px;
         }
-
-        .container {
-            padding-top: 75px;
-            padding-bottom: 75px;
-        }
         
         /* Header Styles */
 
@@ -261,6 +256,33 @@ footer {
 
         /* Portfolio Styles */
 
+
+        
+        /* Contact Styles */
+
+        
+
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        /* Base Styles */
+
+        /* Container Styles */
+
+        .hd-container,
+        .container,
+        .ft-container {
+            max-width: 1200px;
+        }
+
+        .container {
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+
+        /* Portfolio Styles */
+
         .card {
             flex-wrap: nowrap;
             padding-top: 75px;
@@ -277,27 +299,14 @@ footer {
         }
         
         .project-info {
-            margin-left: 1rem;
+            margin-top: 0px;
+            margin-left: 1rem;   
         }
 
         /* Contact Styles */
 
         .contact {
             padding-top: 75px;
-        }
-
-    }
-
-    @media only screen and (min-width: 1024px) {
-
-        /* Base Styles */
-
-        /* Container Styles */
-
-        .hd-container,
-        .container,
-        .ft-container {
-            max-width: 1200px;
         }
 
     }
