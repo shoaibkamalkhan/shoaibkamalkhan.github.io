@@ -121,6 +121,48 @@ a:hover {
     border: 3px solid white;
 }
 
+.container {
+    padding-top: 75px;
+}
+
+.pf-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+
+}
+
+.project-images,
+.project-info {
+    max-width: 50%;
+}
+
+.profile-image {
+    margin-right: 2rem;
+}
+
+.project-info {
+    margin-left: 2rem;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    color: #000000;
+    text-decoration: initial;
+}
+
+
+
+
     @media only screen and (min-width: 768px) {
        
         /* Base Styles */
