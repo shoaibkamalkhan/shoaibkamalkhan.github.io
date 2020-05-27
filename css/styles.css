@@ -160,6 +160,16 @@ a:hover {
     text-decoration: initial;
 }
 
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.ft-container {
+    text-align: center;
+    height: 60px;
+}
 
 
 
