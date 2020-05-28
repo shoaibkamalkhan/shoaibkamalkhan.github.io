@@ -145,10 +145,17 @@ a:hover {
 .bio {
     padding-top: 50px;
     padding-bottom: 50px;
+    border-bottom: 1px solid #808080;
+    margin-bottom: 50px;
 }
 
 .bio p {
     margin: 0px;
+}
+
+.bio a {
+    color: #000000;
+    text-decoration: underline;
 }
 
 /* Portfolio Styles */
@@ -186,6 +193,21 @@ a:hover {
 
 .project-info {
     margin-top: .75rem;
+}
+
+button {
+    margin: 0px 2.5px;
+    padding: 10px;
+    background-color: lightgray;
+    color: #4C4C4C;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-git {
+    margin-left: 0px;
 }
 
 /* Skills Styles */
@@ -320,8 +342,8 @@ footer p {
         }
 
         .container {
-            padding-top: 75px;
-            padding-bottom: 75px;
+            padding-top: 65px;
+            padding-bottom: 65px;
         }
 
         /* Banner Styles */
@@ -346,23 +368,24 @@ footer p {
         /* Bio Styles */
 
         .bio {
-            padding-top: 75px;
-            padding-bottom: 75px;
+            padding-top: 65px;
+            padding-bottom: 65px;
+            margin-bottom: 65px;
         }
 
         /* Skills Styles */
 
         .skills {
-            padding-top: 75px;
-            padding-bottom: 75px;
+            padding-top: 65px;
+            padding-bottom: 65px;
         } 
 
         /* Portfolio Styles */
 
         .card {
             flex-direction: row;
-            padding-top: 75px;
-            padding-bottom: 75px;
+            padding-top: 65px;
+            padding-bottom: 65px;
         }
 
         .project-heading {
@@ -386,7 +409,7 @@ footer p {
         /* Contact Styles */
 
         .contact {
-            padding-top: 75px;
+            padding-top: 65px;
         }
 
     }
