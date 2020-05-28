@@ -392,7 +392,14 @@ footer p {
             margin-top: 0px;
         }
 
-        .project-images,
+        .card a {
+            max-width: 50%;
+        }
+
+        .project-images {
+            max-width: 100%;
+        }
+
         .project-info {
             max-width: 50%;
         }
