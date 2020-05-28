@@ -135,6 +135,22 @@ a:hover {
     border: 3px solid white;
 }
 
+/* Bio Styles */
+
+.bio-heading {
+    text-align: center;
+    margin: 0px;
+}
+
+.bio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bio p {
+    margin: 0px;
+}
+
 /* Portfolio Styles */
 
 .pf-heading {
@@ -171,6 +187,19 @@ a:hover {
 .project-info {
     margin-top: .75rem;
 }
+
+/* Skills Styles */
+
+.skills {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sk-heading {
+    text-align: center;
+    margin: 0px;
+}
+
 
 /* Contact Styles */
 
@@ -313,6 +342,20 @@ footer p {
         .banner p {
             font-size: 1rem;
         }
+
+        /* Bio Styles */
+
+        .bio {
+            padding-top: 75px;
+            padding-bottom: 75px;
+        }
+
+        /* Skills Styles */
+
+        .skills {
+            padding-top: 75px;
+            padding-bottom: 75px;
+        } 
 
         /* Portfolio Styles */
 
