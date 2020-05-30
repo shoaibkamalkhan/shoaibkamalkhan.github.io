@@ -222,6 +222,7 @@ button {
 .sk-images {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -289,6 +290,7 @@ button {
 .ct-images {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -304,20 +306,20 @@ button {
 }
 
 .github-logo {
-    width: 40px;
+    width: 30px;
 }
 
 .linkedin-logo {
-    width: 40px;
+    width: 30px;
 }
 
 .twitter-logo {
-    width: 40px;
-    border-radius: ;
+    width: 30px;
+    border-radius: 50%;
 }
 
 .treehouse-logo {
-    width: 50px;
+    width: 30px;
 }
 
 /* Footer Styles */
