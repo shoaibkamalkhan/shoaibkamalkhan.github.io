@@ -213,9 +213,38 @@ button {
 /* Skills Styles */
 
 .skills {
+    text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
     border-bottom: 1px solid #808080;
+}
+
+.sk-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.sk-images img {
+    margin: 0px 2.5px;
+}
+
+.html-logo,
+.css-logo,
+.js-logo {
+    width: 25px;
+}
+
+.bootstrap-logo {
+    width: 30px;
+}
+
+.sass-logo {
+    width: 40px;
+}
+
+.jquery-logo {
+    width: 85px;
 }
 
 .skills-list-div {
@@ -225,12 +254,6 @@ button {
 .sk-heading {
     text-align: center;
     margin: 0px;
-}
-
-.skills {
-    text-align: center;
-    /* padding-top: 60px;
-    padding-bottom: 60px; */
 }
 
 .sk-list {
@@ -261,6 +284,40 @@ button {
 .contact a {
     color: #000000;
     text-decoration: underline;
+}
+
+.ct-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.ct-images img {
+    margin: 0px 2.5px;
+}
+
+.github-logo,
+.linkedin-logo,
+.twitter-logo,
+.treehouse-logo {
+
+}
+
+.github-logo {
+    width: 40px;
+}
+
+.linkedin-logo {
+    width: 40px;
+}
+
+.twitter-logo {
+    width: 40px;
+    border-radius: ;
+}
+
+.treehouse-logo {
+    width: 50px;
 }
 
 /* Footer Styles */
@@ -446,6 +503,14 @@ footer p {
             padding-bottom: 65px;
         }
 
+        .sk-images {
+            margin-top: 65px;
+        }
+
+        .skills-list-div {
+            padding-top: 65px;
+        }
+
         .sk-table {
             display: none;
         }
@@ -468,6 +533,10 @@ footer p {
 
         .contact {
             padding-top: 65px;
+        }
+
+        .ct-images {
+            margin-top: 65px;
         }
 
     }
