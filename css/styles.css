@@ -215,11 +215,35 @@ button {
 .skills {
     padding-top: 50px;
     padding-bottom: 50px;
+    border-bottom: 1px solid #808080;
+}
+
+.skills-list-div {
+    padding-top: 50px;
 }
 
 .sk-heading {
     text-align: center;
     margin: 0px;
+}
+
+.skills {
+    text-align: center;
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
+}
+
+.sk-list {
+    margin: 0px;
+    list-style: none;
+}
+
+.sk-table {
+    display: none;
+}
+
+.sk-table-1024 {
+    display: none;
 }
 
 
@@ -313,9 +337,25 @@ footer p {
             height: 135px;
         }
 
-        /* Portfolio Styles */
+        /* Skills Styles */
 
+        .sk-list {
+            display: none;
+        } 
 
+        .sk-table {
+            display: inline-block;
+        }
+
+        .sk-table ul {
+            list-style: disc;
+            text-align: left;
+            margin: 0px;
+        }
+
+        .sk-table td {
+            padding: 0 25px;
+        }
 
         /* Contact Styles */
 
@@ -373,13 +413,6 @@ footer p {
             margin-bottom: 65px;
         }
 
-        /* Skills Styles */
-
-        .skills {
-            padding-top: 65px;
-            padding-bottom: 65px;
-        } 
-
         /* Portfolio Styles */
 
         .card {
@@ -406,6 +439,31 @@ footer p {
             margin-left: 1rem;   
         }
 
+        /* Skills Styles */
+
+        .skills {
+            padding-top: 65px;
+            padding-bottom: 65px;
+        }
+
+        .sk-table {
+            display: none;
+        }
+
+        .sk-table-1024 {
+            display: inline-block;
+        }
+
+        .sk-table-1024 ul {
+            list-style: disc;
+            text-align: left;
+            margin: 0px;
+        }
+
+        .sk-table-1024 td {
+            padding: 0 25px;
+        }
+
         /* Contact Styles */
 
         .contact {
@@ -413,4 +471,3 @@ footer p {
         }
 
     }
-    
