@@ -300,7 +300,6 @@ button {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    height: 40px;
 }
 
 .ct-images img {
@@ -315,7 +314,7 @@ button {
 }
 
 .twitter-logo {
-    border-radius: 50%;
+    border-radius: 51%;
 }
 
 /* Footer Styles */
