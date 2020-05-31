@@ -299,7 +299,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 .ct-images img {
@@ -311,6 +311,7 @@ button {
 .twitter-logo,
 .treehouse-logo {
     width: 30px;
+    padding: 2px 0px;
 }
 
 .twitter-logo {
