@@ -299,7 +299,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .ct-images img {
@@ -310,24 +310,11 @@ button {
 .linkedin-logo,
 .twitter-logo,
 .treehouse-logo {
-
-}
-
-.github-logo {
-    width: 30px;
-}
-
-.linkedin-logo {
     width: 30px;
 }
 
 .twitter-logo {
-    width: 30px;
     border-radius: 50%;
-}
-
-.treehouse-logo {
-    width: 30px;
 }
 
 /* Footer Styles */
@@ -509,14 +496,6 @@ footer p {
             padding-bottom: 65px;
         }
 
-        /* .sk-images {
-            margin-top: 65px;
-        } */
-
-        /* .skills-list-div {
-            padding-top: 65px;
-        } */
-
         .sk-table {
             display: none;
         }
@@ -539,10 +518,6 @@ footer p {
 
         .contact {
             padding-top: 65px;
-        }
-
-        .ct-images {
-            margin-top: 65px;
         }
 
     }
