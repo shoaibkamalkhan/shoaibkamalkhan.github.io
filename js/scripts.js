@@ -18,11 +18,32 @@
 
 const modalOverlay = document.getElementById('modal-overlay');
 const projectImage = document.getElementsByClassName('project-images');
+const projectInfo = [
+    {projectName: 'personal-profile-page-screen-shot'},
+    {projectName: 'mobile-first-responsive-layout-screen-shot'},
+    {projectName: 'online-registration-form-screen-shot'},
+    {projectName: 'web-style-guide-screen-shot'},
+    {projectName: 'interactive-photo-gallery-screen-shot'},
+    {projectName: 'game-show-app-screen-shot'},
+    {projectName: 'webapp-dashboard-screen-shot'},
+    {projectName: 'api-employee-directory-screen-shot'}
+];
 
     for(let i = 0; i < projectImage.length; i += 1) {
-        projectImage.addEventListener('click', () => {
+        projectImage[i].addEventListener('click', () => {
             modalOverlay.style.display = 'block';
         });
+        
     }
 
+    for(let i = 0; i < projectInfo.length; i += 1) {
+        modalOverlay.style.backgroundImage = `url('img/screen-shots/${projectInfo[i].projectName}.png')`;
+    }
+
+   
+
+
 console.log(projectImage);
+console.log(projectInfo);
+console.log(modalOverlay.style.backgroundImage);
+
