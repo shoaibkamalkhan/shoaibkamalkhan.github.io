@@ -12,12 +12,16 @@
 
 6. Create a counter and loop through the project names and use object iteration to use the project name in the URL.
 
+7. Create a span to close the overlay.
+
 */
 
 /* Modal Function */
 
 const modalOverlay = document.getElementById('modal-overlay');
-const projectImage = document.getElementsByClassName('project-images');
+const pfCard = document.querySelector('.pf-cards');
+const projectImage = document.querySelectorAll('.project-images');
+const closeIcon = document.getElementsByClassName('close-icon');
 const projectInfo = [
     {projectName: 'personal-profile-page-screen-shot'},
     {projectName: 'mobile-first-responsive-layout-screen-shot'},
@@ -29,21 +33,23 @@ const projectInfo = [
     {projectName: 'api-employee-directory-screen-shot'}
 ];
 
-    for(let i = 0; i < projectImage.length; i += 1) {
-        projectImage[i].addEventListener('click', () => {
-            modalOverlay.style.display = 'block';
-        });
-        
-    }
+pfCard.addEventListener('click', e => {
+    projectImage.forEach((image, index) => {
+        if (e.target === image) {
+            modalOverlay.style.display = 'flex';
+            modalOverlay.style.backgroundImage = `url('img/screen-shots/${projectInfo[index].projectName}.png')`;
+        }
+    });
 
-    for(let i = 0; i < projectInfo.length; i += 1) {
-        modalOverlay.style.backgroundImage = `url('img/screen-shots/${projectInfo[i].projectName}.png')`;
-    }
+    modalOverlay.innerHTML = '<span class="close-icon">X</span>';
+});
 
-   
-
+closeIcon.addEventListener('click', () => {
+    modalOverlay.style.display = 'none';
+});
 
 console.log(projectImage);
 console.log(projectInfo);
 console.log(modalOverlay.style.backgroundImage);
+console.log(closeIcon);
 
