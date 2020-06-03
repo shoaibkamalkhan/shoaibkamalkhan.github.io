@@ -21,7 +21,6 @@
 const modalOverlay = document.getElementById('modal-overlay');
 const pfCard = document.querySelector('.pf-cards');
 const projectImage = document.querySelectorAll('.project-images');
-const closeIcon = document.getElementsByClassName('close-icon');
 const projectInfo = [
     {projectName: 'personal-profile-page-screen-shot'},
     {projectName: 'mobile-first-responsive-layout-screen-shot'},
@@ -42,10 +41,10 @@ pfCard.addEventListener('click', e => {
     });
 
     modalOverlay.innerHTML = '<span class="close-icon">X</span>';
-});
-
-closeIcon.addEventListener('click', () => {
-    modalOverlay.style.display = 'none';
+    const closeIcon = document.querySelector('.close-icon');
+    closeIcon.addEventListener('click', () => {
+        modalOverlay.style.display = 'none';
+    });
 });
 
 console.log(projectImage);
