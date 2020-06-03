@@ -36,11 +36,16 @@ pfCard.addEventListener('click', e => {
     projectImage.forEach((image, index) => {
         if (e.target === image) {
             modalOverlay.style.display = 'flex';
-            modalOverlay.style.backgroundImage = `url('img/screen-shots/${projectInfo[index].projectName}.png')`;
+            modalOverlay.innerHTML = `
+                <div class="modal-content">
+                    <span class="close-icon">X</span>
+                </div>
+            `;
+            const modalContent = document.querySelector('.modal-content');
+            modalContent.style.backgroundImage = `url('img/screen-shots/${projectInfo[index].projectName}.png')`;
         }
     });
 
-    modalOverlay.innerHTML = '<span class="close-icon">X</span>';
     const closeIcon = document.querySelector('.close-icon');
     closeIcon.addEventListener('click', () => {
         modalOverlay.style.display = 'none';

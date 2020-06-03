@@ -346,19 +346,27 @@ footer p {
     background-color: rgba(0,0,0,0.5); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-}
-
-#modal-overlay {
+    min-height: 80%;
+    min-width: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 90%;
+    background-size: 100%;
+    border: 10px solid #000000;
 }
 
-#modal-overlay span {
+.modal-content span {
     font-size: 50px;
-    color: #FFFFFF;
+    color: grey;
+    margin: 1rem;
 }
 
 /* Modal Styles */
