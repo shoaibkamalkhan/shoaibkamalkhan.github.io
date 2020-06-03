@@ -313,25 +313,6 @@ button {
     width: 30px;
 }
 
-/* Footer Styles */
-
-footer {
-    background-color: #000000;
-    color: #FFFFFF;
-    width: 100%;
-}
-
-.ft-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-}
-
-footer p {
-    font-size: .75rem;
-}
-
 /* Overlay Styles */
 
 #modal-overlay {
@@ -350,28 +331,38 @@ footer p {
     align-items: center;
 }
 
-.modal-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    min-height: 80%;
-    min-width: 80%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border: 10px solid #000000;
+.close-icon {
+    align-self: flex-end;
+    margin: 25px;
+    font-size: 25px;
+    color: #FFFFFF;
 }
 
-.modal-content span {
-    font-size: 50px;
-    color: grey;
-    margin: 1rem;
+.overlay-project-image {
+    width: 80%;
+    border: 7px solid #000000;
 }
 
 /* Modal Styles */
 
+/* Footer Styles */
 
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.ft-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+footer p {
+    font-size: .75rem;
+}
 
 /* Media Queries */
 
@@ -446,6 +437,13 @@ footer p {
 
         .sk-table td {
             padding: 0 25px;
+        }
+
+        /* Overlay Styles */
+
+        .close-icon {
+            margin: 40px;
+            font-size: 30px;
         }
 
         /* Footer Styles */
@@ -555,6 +553,17 @@ footer p {
 
         .contact {
             padding-top: 65px;
+        }
+
+        /* Overlay Styles */
+
+        .close-icon {
+            font-size: 50px;
+            margin: 50px;
+        }
+
+        .overlay-project-image {
+            border-width: 10px;
         }
 
     }

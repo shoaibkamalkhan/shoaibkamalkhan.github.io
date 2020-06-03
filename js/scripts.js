@@ -37,12 +37,9 @@ pfCard.addEventListener('click', e => {
         if (e.target === image) {
             modalOverlay.style.display = 'flex';
             modalOverlay.innerHTML = `
-                <div class="modal-content">
-                    <span class="close-icon">X</span>
-                </div>
+                <span class="close-icon">X</span>
+                <img class="overlay-project-image" src="img/screen-shots/${projectInfo[index].projectName}.png" alt="Modal Project Image">
             `;
-            const modalContent = document.querySelector('.modal-content');
-            modalContent.style.backgroundImage = `url('img/screen-shots/${projectInfo[index].projectName}.png')`;
         }
     });
 
