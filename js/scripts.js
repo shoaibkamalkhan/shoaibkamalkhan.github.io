@@ -16,7 +16,7 @@
 
 */
 
-/* Modal Function */
+/* Variables */
 
 const modalOverlay = document.getElementById('modal-overlay');
 const pfCard = document.querySelector('.pf-cards');
@@ -31,6 +31,8 @@ const projectInfo = [
     {projectName: 'webapp-dashboard-screen-shot'},
     {projectName: 'api-employee-directory-screen-shot'}
 ];
+
+/* Overlay & Modal Event Listeners */
 
 pfCard.addEventListener('click', e => {
     projectImage.forEach((image, index) => {
