@@ -44,12 +44,22 @@ pfCard.addEventListener('click', e => {
         }
     });
 
+    modalOverlay.addEventListener('animationend', () => {
+        if (modalOverlay.classList.contains('animate__flipInY')) {
+            modalOverlay.classList.remove('animate__flipInY');
+        } else if (modalOverlay.classList.contains('animate__flipOutY')) {
+            modalOverlay.classList.remove('animate__flipOutY');
+            modalOverlay.style.display = 'none';
+        }
+    });
+
     const closeIcon = document.querySelector('.close-icon');
     closeIcon.addEventListener('click', () => {
         modalOverlay.classList.add('animate__flipOutY');
-        modalOverlay.classList.remove('animate__flipInY');
     });
 });
+
+
 
 console.log(projectImage);
 console.log(projectInfo);
