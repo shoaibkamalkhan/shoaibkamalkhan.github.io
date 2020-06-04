@@ -51,6 +51,6 @@ pfCard.addEventListener('click', e => {
 
 console.log(projectImage);
 console.log(projectInfo);
-console.log(modalOverlay.style.backgroundImage);
+console.log(modalOverlay.style.display);
 console.log(closeIcon);
 

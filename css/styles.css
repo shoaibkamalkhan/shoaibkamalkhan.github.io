@@ -196,6 +196,7 @@ a:hover {
 
 .project-images {
     border: 1px solid #808080;
+    cursor: pointer;
 }
 
 .project-info {
@@ -341,6 +342,14 @@ button {
 .overlay-project-image {
     width: 80%;
     border: 7px solid #000000;
+}
+
+.overlay-container {
+    perspective: 700px;
+}
+
+.flip {
+    transform: rotateY(25deg);
 }
 
 /* Modal Styles */
