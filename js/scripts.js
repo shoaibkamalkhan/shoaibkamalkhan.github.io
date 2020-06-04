@@ -40,12 +40,14 @@ pfCard.addEventListener('click', e => {
                 <span class="close-icon">X</span>
                 <img class="overlay-project-image" src="img/screen-shots/${projectInfo[index].projectName}.png" alt="Modal Project Image">
             `;
+            modalOverlay.classList.add('animate__flipInY');   
         }
     });
 
     const closeIcon = document.querySelector('.close-icon');
     closeIcon.addEventListener('click', () => {
-        modalOverlay.style.display = 'none';
+        modalOverlay.classList.add('animate__flipOutY');
+        modalOverlay.classList.remove('animate__flipInY');
     });
 });
 

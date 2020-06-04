@@ -344,14 +344,6 @@ button {
     border: 7px solid #000000;
 }
 
-.overlay-container {
-    perspective: 700px;
-}
-
-.flip {
-    transform: rotateY(25deg);
-}
-
 /* Modal Styles */
 
 /* Footer Styles */
