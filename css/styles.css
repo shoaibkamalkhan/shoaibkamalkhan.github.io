@@ -204,6 +204,7 @@ a:hover {
 }
 
 .button {
+    display: inline-block;
     margin: 0px 2.5px;
     padding: 10px;
     background-color: lightgray;
