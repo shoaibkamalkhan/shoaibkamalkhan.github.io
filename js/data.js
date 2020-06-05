@@ -11,7 +11,7 @@ const projectInfo = [
         <div class="modal-body">
             <h1>Techdegree Project 1 - Personal Profile Page</h1>
 
-            <p><strong>Skills Used:</strong></p>
+            <p><strong>Skills & Technologies Used:</strong></p>
 
             <ul>
                 <li>HTML</li>
