@@ -349,9 +349,16 @@ button {
 /* Modal Header */
 
 .modal-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
+}
+
+.modal-header h2 {
+    margin-right: auto;
 }
   
 /* Modal Body */
@@ -363,6 +370,10 @@ button {
 .modal-body ul {
     margin-left: 16px;
 }
+
+.modal-body a {
+    color: #000000;
+}
   
 /* Modal Footer */
 
@@ -370,6 +381,7 @@ button {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
+    height: 69.813px;
 }
   
 /* Modal Content */
@@ -383,9 +395,8 @@ button {
     height: 50%;
     width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    overflow: auto;
 }
-
-
 
 /* Footer Styles */
 

@@ -5,11 +5,10 @@ const projectInfo = [
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close">&times;</span>
                 <h2>Project Details</h2>
+                <span class="close">X</span>
             </div>
         <div class="modal-body">
-
             <h1>Techdegree Project 1 - Personal Profile Page</h1>
 
             <p><strong>Skills Used:</strong></p>
@@ -47,13 +46,8 @@ const projectInfo = [
             <p><strong>Grade Received:</strong></p>
 
             <p>Exceeds Expectations</p>
-
-            <p>You can see the live project at the following link: https://shoaibkamalkhan.github.io/.</p>
-
-            <p>You can see my portfolio at the following link: https://shoaibkamalkhan.github.io.</p>
         </div>
         <div class="modal-footer">
-            <h3>Modal Footer</h3>
         </div>
         </div>
         `
