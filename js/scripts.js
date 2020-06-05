@@ -60,5 +60,3 @@ pfCard.addEventListener('click', e => {
         modalOverlay.classList.add('animate__fadeOut');
     });
 });
-
-console.log(projectDetails);

@@ -1,3 +1,5 @@
+/* Variables */
+
 const projectInfo = [
     {
         projectName: 'personal-profile-page-screen-shot',
