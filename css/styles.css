@@ -203,7 +203,7 @@ a:hover {
     margin-top: .75rem;
 }
 
-button {
+.button {
     margin: 0px 2.5px;
     padding: 10px;
     background-color: lightgray;
