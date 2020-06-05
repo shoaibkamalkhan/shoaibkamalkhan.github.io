@@ -1,38 +1,11 @@
-/* 
-
-1. Make an overlay in HTML with CSS.
-
-2. Select the overlay.
-
-3. Create and event listener.
-
-4. Check to see if this all works.
-
-5. Create an object with the project image name and project details in HTML using string interpolation.
-
-6. Create a counter and loop through the project names and use object iteration to use the project name in the URL.
-
-7. Create a span to close the overlay.
-
-*/
-
 /* Variables */
 
 const modalOverlay = document.getElementById('modal-overlay');
 const pfCard = document.querySelector('.pf-cards');
 const projectImage = document.querySelectorAll('.project-images');
-const projectInfo = [
-    {projectName: 'personal-profile-page-screen-shot'},
-    {projectName: 'mobile-first-responsive-layout-screen-shot'},
-    {projectName: 'online-registration-form-screen-shot'},
-    {projectName: 'web-style-guide-screen-shot'},
-    {projectName: 'interactive-photo-gallery-screen-shot'},
-    {projectName: 'game-show-app-screen-shot'},
-    {projectName: 'webapp-dashboard-screen-shot'},
-    {projectName: 'api-employee-directory-screen-shot'}
-];
+const projectDetailsBtn = document.querySelectorAll('.project-details-btn');
 
-/* Overlay & Modal Event Listeners */
+/* Overlay & Image Modal Event Listeners */
 
 pfCard.addEventListener('click', e => {
     projectImage.forEach((image, index) => {
@@ -61,10 +34,31 @@ pfCard.addEventListener('click', e => {
     });
 });
 
+/* Overlay & Project Details Modal Event Listeners */
 
+pfCard.addEventListener('click', e => {
+    projectDetailsBtn.forEach((button, index) => {
+        if (e.target === button) {
+            modalOverlay.style.display = 'flex';
+            modalOverlay.innerHTML = `${projectInfo[index].projectDetails}`;
 
-console.log(projectImage);
-console.log(projectInfo);
-console.log(modalOverlay.style.display);
-console.log(closeIcon);
+            modalOverlay.classList.add('animate__fadeIn');
+        }
+    });
 
+    modalOverlay.addEventListener('animationend', () => {
+        if (modalOverlay.classList.contains('animate__fadeIn')) {
+            modalOverlay.classList.remove('animate__fadeIn');
+        } else if (modalOverlay.classList.contains('animate__fadeOut')) {
+            modalOverlay.classList.remove('animate__fadeOut');
+            modalOverlay.style.display = 'none';
+        }
+    });
+
+    const closeIconDetails = document.querySelector('.close');
+    closeIconDetails.addEventListener('click', () => {
+        modalOverlay.classList.add('animate__fadeOut');
+    });
+});
+
+console.log(projectDetails);
