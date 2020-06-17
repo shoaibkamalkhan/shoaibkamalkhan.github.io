@@ -38,11 +38,27 @@ body {
 
 /* Header Styles */
 
+.mobile-container {
+    position: relative;
+}
+
 header {
+    overflow: hidden;
     background-color: #000000;
     color: #FFFFFF;
     position: fixed;
     width: 100%;
+    left: 0; 
+    right: 0; 
+    z-index: 1;
+}
+
+#myLinks {
+    display: none;
+}
+
+#myLinks li {
+    list-style: none;
 }
 
 .hd-container {
@@ -52,23 +68,12 @@ header {
     height: 60px;
 }
 
-nav {
-    display: flex;
-}
-
-nav ul li {
-    float: left;
-    margin: 0 3px;
-    list-style: none;
-    font-size: .75rem;
+.main-nav {
+    display: none;
 }
 
 ul {
     padding: 0;
-}
-
-.contact-li {
-    margin-right: 0px;
 }
 
 .main-heading {
@@ -82,11 +87,11 @@ ul {
 }
 
 .main-heading h1 {
-    font-size: .75rem;
+    font-size: 1rem;
 }
 
 .main-heading h3 {
-    font-size: .50rem;
+    font-size: .65rem;
 }
 
 a {
@@ -440,6 +445,10 @@ footer p {
         
         /* Header Styles */
 
+        .icon {
+            display: none;
+        }
+
         .main-heading h1 {
             font-size: 1.25rem;
         }
@@ -448,12 +457,26 @@ footer p {
             font-size: .75rem;
         }
 
-        nav ul li {
+        .main-nav {
+            display: flex;
+        }
+
+        .main-nav ul li {
+            float: left;
+            margin: 0 3px;
+            list-style: none;
+        }
+
+        .main-nav ul li {
             margin: 0 5px;   
         }
 
-        nav ul li {
+        .main-nav ul li {
             font-size: 1rem;
+        }
+
+        .contact-li {
+            margin-right: 0px;
         }
 
         /* Banner Styles */

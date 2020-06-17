@@ -5,6 +5,17 @@ const pfCard = document.querySelector('.pf-cards');
 const projectImage = document.querySelectorAll('.project-images');
 const projectDetailsBtn = document.querySelectorAll('.project-details-btn');
 
+/* Mobile Navigation Function */
+
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+}
+
 /* Overlay & Image Modal Event Listeners */
 
 pfCard.addEventListener('click', e => {
