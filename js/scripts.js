@@ -37,6 +37,14 @@ mobileNav.addEventListener('click', e => {
     });
 });
 
+window.addEventListener('click', e => {
+    const bars = document.querySelector('.fa-bars');
+    if (e.target !== bars) {
+      mobileNav.classList.add('animate__fadeOut');
+      return;
+    }
+});
+
 /* Overlay & Image Modal Event Listeners */
 
 pfCard.addEventListener('click', e => {
