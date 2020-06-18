@@ -7,12 +7,12 @@ const projectDetailsBtn = document.querySelectorAll('.project-details-btn');
 
 /* Mobile Navigation Function */
 
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+function mobileMenu() {
+    var menu = document.getElementById("myLinks");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
     } else {
-      x.style.display = "block";
+        menu.style.display = "block";
     }
 }
 

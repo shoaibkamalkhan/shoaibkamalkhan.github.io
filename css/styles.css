@@ -38,18 +38,27 @@ body {
 
 /* Header Styles */
 
-.mobile-container {
-    position: relative;
-}
-
 header {
-    overflow: hidden;
     background-color: #000000;
     color: #FFFFFF;
     position: fixed;
     width: 100%;
-    left: 0; 
-    right: 0; 
+}
+
+.hd-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+}
+
+.mobile-nav {
+    background-color: #333333;
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    left: 0;
+    right: 0;
     z-index: 1;
 }
 
@@ -59,13 +68,7 @@ header {
 
 #myLinks li {
     list-style: none;
-}
-
-.hd-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 60px;
+    margin: 5px;
 }
 
 .main-nav {
@@ -445,16 +448,20 @@ footer p {
         
         /* Header Styles */
 
-        .icon {
-            display: none;
-        }
-
         .main-heading h1 {
             font-size: 1.25rem;
         }
         
         .main-heading h3 {
             font-size: .75rem;
+        }
+
+        .mobile-nav {
+            display: none;
+        }
+
+        .icon {
+            display: none;
         }
 
         .main-nav {
