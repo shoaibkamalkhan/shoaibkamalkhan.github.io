@@ -20,13 +20,13 @@ hamburger.addEventListener('click', () => {
         mobileNav.classList.remove('animate__fadeOut');
         mobileNav.classList.add('animate__fadeIn');
     }
-    
-    // if (mobileNav.classList.contains('animate__fadeIn')) {
+});
+
+ // if (mobileNav.classList.contains('animate__fadeIn')) {
     //     mobileNav.classList.remove('animate__fadeIn');
     // } else if (mobileNav.classList.contains('animate__fadeOut')) {
     //     mobileNav.classList.remove('animate__fadeOut');
     // }
-});
 
 // function mobileMenu() {
 //     var menu = document.getElementById("myLinks");
