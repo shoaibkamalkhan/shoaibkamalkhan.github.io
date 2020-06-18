@@ -1,9 +1,41 @@
 /* Variables */
 
+const hamburger = document.querySelector('.icon');
+const menu = document.getElementById("myLinks");
+const mobileNav = document.querySelector('.mobile-nav');
 const modalOverlay = document.getElementById('modal-overlay');
 const pfCard = document.querySelector('.pf-cards');
 const projectImage = document.querySelectorAll('.project-images');
 const projectDetailsBtn = document.querySelectorAll('.project-details-btn');
+
+/* Mobile Navigation Event Listeners */
+
+hamburger.addEventListener('click', () => {
+    if (menu.style.display === "block") {
+        mobileNav.classList.add('animate__fadeOut');
+    } else {
+        menu.style.display = "block";
+        mobileNav.classList.add('animate__fadeIn');
+    }
+
+    mobileNav.addEventListener('animationend', () => {
+        if (mobileNav.classList.contains('animate__fadeIn')) {
+            mobileNav.classList.remove('animate__fadeIn');
+        } else if (mobileNav.classList.contains('animate__fadeOut')) {
+            mobileNav.classList.remove('animate__fadeOut');
+            menu.style.display = 'none';
+        }
+    });
+});
+
+mobileNav.addEventListener('click', e => {
+    const navItems = mobileNav.querySelectorAll('li a');
+    navItems.forEach((li) => {
+        if (e.target === li) {
+            mobileNav.classList.add('animate__fadeOut');
+        }
+    });
+});
 
 /* Overlay & Image Modal Event Listeners */
 
