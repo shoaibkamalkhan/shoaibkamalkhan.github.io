@@ -14,12 +14,20 @@ hamburger.addEventListener('click', () => {
     if (menu.style.display === "block") {
         mobileNav.classList.remove('animate__fadeIn'); 
         mobileNav.classList.add('animate__fadeOut');
-        menu.style.display = "none";
     } else {
         menu.style.display = "block";
         mobileNav.classList.remove('animate__fadeOut');
         mobileNav.classList.add('animate__fadeIn');
     }
+
+    mobileNav.addEventListener('animationend', () => {
+        if (mobileNav.classList.contains('animate__fadeIn')) {
+            mobileNav.classList.remove('animate__fadeIn');
+        } else if (mobileNav.classList.contains('animate__fadeOut')) {
+            mobileNav.classList.remove('animate__fadeOut');
+            menu.style.display = 'none';
+        }
+    });
 });
 
  // if (mobileNav.classList.contains('animate__fadeIn')) {
