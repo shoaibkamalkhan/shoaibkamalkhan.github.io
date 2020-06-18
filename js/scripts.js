@@ -1,5 +1,8 @@
 /* Variables */
 
+const hamburger = document.querySelector('.icon');
+const menu = document.getElementById("myLinks");
+const mobileNav = document.querySelector('.mobile-nav');
 const modalOverlay = document.getElementById('modal-overlay');
 const pfCard = document.querySelector('.pf-cards');
 const projectImage = document.querySelectorAll('.project-images');
@@ -7,14 +10,32 @@ const projectDetailsBtn = document.querySelectorAll('.project-details-btn');
 
 /* Mobile Navigation Function */
 
-function mobileMenu() {
-    var menu = document.getElementById("myLinks");
+hamburger.addEventListener('click', () => {
     if (menu.style.display === "block") {
+        mobileNav.classList.remove('animate__fadeIn'); 
+        mobileNav.classList.add('animate__fadeOut');
         menu.style.display = "none";
     } else {
         menu.style.display = "block";
+        mobileNav.classList.remove('animate__fadeOut');
+        mobileNav.classList.add('animate__fadeIn');
     }
-}
+    
+    // if (mobileNav.classList.contains('animate__fadeIn')) {
+    //     mobileNav.classList.remove('animate__fadeIn');
+    // } else if (mobileNav.classList.contains('animate__fadeOut')) {
+    //     mobileNav.classList.remove('animate__fadeOut');
+    // }
+});
+
+// function mobileMenu() {
+//     var menu = document.getElementById("myLinks");
+//     if (menu.style.display === "block") {
+//         menu.style.display = "none";
+//     } else {
+//         menu.style.display = "block";
+//     }
+// }
 
 /* Overlay & Image Modal Event Listeners */
 
