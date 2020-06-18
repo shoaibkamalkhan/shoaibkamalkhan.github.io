@@ -52,6 +52,10 @@ header {
     height: 60px;
 }
 
+.icon {
+    font-size: 1.35rem;
+}
+
 .mobile-nav {
     background-color: #333333;
     position: absolute;
