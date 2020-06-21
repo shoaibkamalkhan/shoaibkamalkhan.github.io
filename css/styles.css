@@ -535,7 +535,7 @@ footer p {
         }
 
         .sk-table td {
-            vertical-align: top !important;
+            vertical-align: baseline !important;
             padding: 0 25px;
             
         }
@@ -659,7 +659,7 @@ footer p {
         }
 
         .sk-table-1024 td {
-            vertical-align: top !important;
+            vertical-align: baseline !important;
             padding: 0 25px;
             
         }
