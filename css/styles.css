@@ -535,7 +535,9 @@ footer p {
         }
 
         .sk-table td {
+            vertical-align: top !important;
             padding: 0 25px;
+            
         }
 
         /* Image Overlay Styles */
@@ -657,7 +659,9 @@ footer p {
         }
 
         .sk-table-1024 td {
+            vertical-align: top !important;
             padding: 0 25px;
+            
         }
 
         /* Contact Styles */
