@@ -10,6 +10,8 @@ const projectDetailsBtn = document.querySelectorAll('.project-details-btn');
 
 /* Mobile Navigation Event Listeners */
 
+/* These event listners listen for clicks on the hamburger menu and menu items and execute the css fade in and fade out animations. */
+
 hamburger.addEventListener('click', () => {
     if (menu.style.display === "block") {
         mobileNav.classList.add('animate__fadeOut');
@@ -47,6 +49,8 @@ window.addEventListener('click', e => {
 
 /* Overlay & Image Modal Event Listeners */
 
+/* These event listners listen for clicks on the project images and close icon and then execute the css flip in and flip out animations. */
+
 pfCard.addEventListener('click', e => {
     projectImage.forEach((image, index) => {
         if (e.target === image) {
@@ -75,6 +79,8 @@ pfCard.addEventListener('click', e => {
 });
 
 /* Overlay & Project Details Modal Event Listeners */
+
+/* These event listners reset the css animations. */
 
 pfCard.addEventListener('click', e => {
     projectDetailsBtn.forEach((button, index) => {
