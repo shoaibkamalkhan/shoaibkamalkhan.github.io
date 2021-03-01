@@ -13,18 +13,18 @@ body {
     background-color: #f7f5f0;
 }
 
+.bio,
+.pf-cards,
+.skills,
+.contact {
+    line-height: 1.4rem;
+}
+
 :target {
     display: block;
     position: relative;
     top: -120px;
     visibility: hidden;
-}
-
-.bio,
-.pf-cards,
-.skills,
-.contact {
-    line-height: 1.65rem;
 }
 
 /* Base Styles */
@@ -452,6 +452,15 @@ footer p {
 
     @media only screen and (min-width: 768px) {
        
+        /* Global Styles */
+
+        .bio,
+        .pf-cards,
+        .skills,
+        .contact {
+            line-height: 1.65rem;
+        }
+
         /* Base Styles */
 
         /* Container Styles */
