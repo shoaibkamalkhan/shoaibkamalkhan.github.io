@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
     background-color: #f7f5f0;
 }
 
@@ -18,6 +18,13 @@ body {
     position: relative;
     top: -120px;
     visibility: hidden;
+}
+
+.bio,
+.pf-cards,
+.skills,
+.contact {
+    line-height: 1.65rem;
 }
 
 /* Base Styles */
